@@ -1,0 +1,3 @@
+use_nix
+export TG_TOKEN=<telegram token goes here>
+export OWM_TOKEN=<open weather map token goes here>
