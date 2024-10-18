@@ -1,3 +1,5 @@
 __pycache__/
+env/
 .envrc
 .direnv
+tg_assistant_persistence.pickle

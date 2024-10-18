@@ -13,6 +13,7 @@ So, I made this bot that sends me the temperature and predicted hours of rain ea
 ## Usage
 Clone the repo, and install the dependencies.
 If you use nix, then you can open a shell to install them automatically.
-If you don't use nix, good luck.
+If you don't use nix, you can install the dependencies from `requirements.txt`.
 
 Create a Telegram bot via @botfather, and paste the token into `.envrc`. Do the same with OWM.
+You can load the tokens using direnv.
