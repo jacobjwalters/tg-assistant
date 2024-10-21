@@ -16,15 +16,13 @@ async def register_morning_routine(update: Update, context: ContextTypes.DEFAULT
 async def start_morning(id: int, context: ContextTypes.DEFAULT_TYPE) -> None:
     """Walks the user through leaving bed"""
 
-    await context.bot.send_message(chat_id=id, text="Good morning! I hope you slept well.\nAre you ready to start your day?")
+    #await context.bot.send_message(chat_id=id, text="Good morning! I hope you slept well.\nAre you ready to start your day?")
     await morning(context)
 
 
 async def morning(context: ContextTypes.DEFAULT_TYPE) -> None:
     """Runs the morning routine"""
     assert context.user_data is not None
-
-    id = context.user_data["user_id"]
 
     await today_forecast(context)
 
