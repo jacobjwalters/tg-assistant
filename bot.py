@@ -105,7 +105,8 @@ def main() -> None:
     # Morning message
     job_queue = application.job_queue
     assert job_queue is not None
-    job_morning   = job_queue.run_daily(run_morning_routine, time=datetime.time(hour=9,  minute=0, second=0, tzinfo=pytz.timezone("Europe/London")))
+    #job_morning   = job_queue.run_daily(run_morning_routine, time=datetime.time(hour=9,  minute=0, second=0, tzinfo=pytz.timezone("Europe/London")))
+    job_morning   = job_queue.run_daily(today_forecast, time=datetime.time(hour=9,  minute=0, second=0, tzinfo=pytz.timezone("Europe/London")))
 
     # Run the bot until the user presses Ctrl-C
     application.run_polling(allowed_updates=Update.ALL_TYPES)
